@@ -51,6 +51,56 @@ This project is designed to combine **emotional intelligence** with **technology
 | 3   | Angry  | "Calm mind brings strength." | https://youtu.be/...              |
 
 ---
+# Mood-Based Music and Quote Suggestion System
+
+A Java-based GUI project that suggests **music** and **quotes** based on user mood.  
+Built with **Java (Swing + JDBC)** and **MySQL**.
+
+---
+
+## 📂 Database Setup
+
+This project uses **MySQL** as the backend. The database dump is included in the repo.
+
+### Steps to Import Database
+1. Open **MySQL Workbench**.
+2. Create a new schema:
+   ```sql
+   CREATE DATABASE mood_db;
+
+### 3. Update Database Credentials in Code
+Open your Java code and update the MySQL connection details:
+```java
+String url = "jdbc:mysql://localhost:3306/mood_db";
+String user = "root";
+String password = "your_password";
+
+---
+
+##▶️ Running the Project
+1. Open the project in VS Code
+2. Configure Java (JDK 17+ recommended).
+3. Compile and run the main java file:
+
+javac Main.java
+java Main
+
+4.The GUI will open where you can:
+🔹 Select your mood
+🔹 Get a music suggestion (Youtube Link will play inside GUI)
+🔹 Get an inspirational Quote.
+
+---
+
+##🗂 Project Structure
+
+project/
+│── src/                   # Java source files
+│── database/
+│   └── mood_music_quotes_db.sql
+│── README.md
+
+---
 
 ## 🚀 Future Enhancements  
 🔹 Add **AI/ML-based sentiment analysis** for automatic mood detection  
