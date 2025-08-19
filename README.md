@@ -122,4 +122,12 @@ project/
 
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/your-username/mood-music-quote-system.git
+git clone https://github.com/your-username/mood-music-quote-system.git 
+
+## To Run the program we have to run these commands on the command line client to access the database so that the GUI gets connected with the database.
+🔹command 1: "C:\Program Files\MySQL\MySQL Server 8.4\bin\MySQL.exe" -u root -p
+🔹command 2: ALTER USER 'root'@'localhost' IDENTIFIED BY '12345678';
+🔹command 3: FLUSH PRIVILEGES;
+# Then to run the GUI we have to write these commands on powershell terminal
+🔹command 1: javac -cp "lib/mysql-connector-j-9.4.0.jar;src" src\Main.java src\database\DatabaseManager.java src\gui\MoodSuggesterApp.java
+🔹command 2: java -cp "lib/mysql-connector-j-9.4.0.jar;src" Main
